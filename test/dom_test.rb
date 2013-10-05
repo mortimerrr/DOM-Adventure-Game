@@ -80,5 +80,21 @@ class DomTest < Test::Unit::TestCase
 		assert_equal ___, @img.attr(:alt)
 	end
 
+	def test_dom_can_have_elements_added
+		fun_fact = Nokogiri::XML::Node.new("li", @dom)
+		fun_fact = "I rode an elephant when I was 5"
+		@ul = @body.elements[3]
+		@ul.add_child(fun_fact)
+		assert_equal ___, @ul.elements.length
+		assert_equal ___, @ul.elements.last.content
+	end
+
+	def test_dom_elements_can_be_moved
+		lead = @dom.css('.lead').first
+		lead.parent = @body
+		assert_equal ___, @body.elements.length
+		assert_equal ___, @body.elements.map {|e| e.name }
+	end
+
 end
 

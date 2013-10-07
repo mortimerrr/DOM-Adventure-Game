@@ -10,7 +10,7 @@ class DomTest < Test::Unit::TestCase
 	end
 
 	def test_document_is_html_doctype
-		assert_equal "html", @dom.children.first.name
+		assert_equal ___, @dom.children.first.name
 	end
 
 	def test_first_element_is_the_html_root

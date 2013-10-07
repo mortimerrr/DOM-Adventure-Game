@@ -10,7 +10,7 @@ class DomTest < Test::Unit::TestCase
 	end
 
 	def test_document_is_html_doctype
-		assert_equal ___, @dom.children.first.name
+		assert_equal "html", @dom.children.first.name
 	end
 
 	def test_first_element_is_the_html_root
@@ -68,8 +68,8 @@ class DomTest < Test::Unit::TestCase
 	def test_elements_can_be_found_by_class
 		facts = @dom.css('.fact')
 		assert_equal ___, facts.length
-		assert_equal ___, first.first.attr(:class)
-		assert_equal ___, first.first.content
+		assert_equal ___, facts.first.attr(:class)
+		assert_equal ___, facts.first.content
 	end
 
 	def test_dom_can_be_changed

@@ -82,9 +82,10 @@ class DomTest < Test::Unit::TestCase
 
 	def test_dom_can_have_elements_added
 		fun_fact = Nokogiri::XML::Node.new("li", @dom)
-		fun_fact = "I rode an elephant when I was 5"
+		fun_fact.content = "I rode an elephant when I was 5"
 		@ul = @body.elements[3]
 		@ul.add_child(fun_fact)
+
 		assert_equal ___, @ul.elements.length
 		assert_equal ___, @ul.elements.last.content
 	end

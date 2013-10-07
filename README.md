@@ -7,8 +7,9 @@ We'll get to grips with the DOM and understand how webpages work.
 
 1. Fork this repo
 2. git clone your own copy to your projects folder.
-3. cd ~/projects/the_dom
-4. ruby test/dom_test.rb
+3. ```cd ~/projects/dom_test```
+4. ```bundle```
+4. ```ruby test/dom_test.rb```
 
 # TODO
 

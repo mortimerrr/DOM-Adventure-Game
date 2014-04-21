@@ -1,0 +1,21 @@
+body { 
+	background-color: beige;
+	max-width: 80%;
+	margin: auto;
+	}
+
+h1 {
+	color: #8F76A8;
+}
+
+h1, h2, h3, p, form {
+	text-align: center;
+}
+
+img {
+	display: block;
+	width: 500px;
+	height: 500px;
+	margin: 50px auto;
+
+}

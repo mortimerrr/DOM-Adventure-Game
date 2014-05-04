@@ -7,14 +7,34 @@ h1 {
 	color: #8F76A8;
 }
 
+section {
+	text-align: center;
+}
+
+/*
 h1, h2, h3, p, form {
 	text-align: center;
+}
+*/
+
+#next-page {
+	display: inline-block;
+	background-color: #8F76A8;
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	border: none;
+}
+
+#next-page a {
+	text-decoration: none;
+	color: white;
 }
 
 img {
 	display: block;
 	width: 500px;
 	height: 500px;
-	margin: 50px auto;
+	margin: 20px auto;
 
 }
